@@ -137,3 +137,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Directory where 'collects
 MEDIA_URL = '/media/'  # URL endpoint for media files
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # Directory where media files are stored
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+LOGIN_URL = '/accounts/login'
+LOGIN_REDIRECT_URL = '/tweet/'
+LOGOUT_REDIRECT_URL = '/tweet/'
