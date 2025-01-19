@@ -7,6 +7,7 @@ from .forms import TweetForm, UserRegistrationForm
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 
+
 def home(request):
     tweets = Tweet.objects.all().order_by('-created_at')
     return render(request, 'home.html', {'tweets': tweets})
